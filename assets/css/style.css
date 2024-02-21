@@ -2051,6 +2051,7 @@ span.searchBtn {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  
 }
 .hc-about-1 > div > h2{
   font-size: 5em;
@@ -2090,6 +2091,7 @@ span.searchBtn {
   position: relative;
   width: 25vw;
   border-radius: 10px;
+  transition: ease-in .5s;
   box-shadow: 2px 2px  8px rgba(0, 0, 0, 0.7);
 }
 .hc-abt-pic:hover{
@@ -2141,6 +2143,40 @@ span.searchBtn {
     transform: scale(1.1);
     transition: ease-out .5s;
   }
+
+  /*----=====Dropdown navbar====------  */
+ .dropdown-services{
+   width: 28vw;
+   background:#ffffff69 ;
+   position: absolute;
+   z-index: 999;
+   display: none;
+   backdrop-filter: blur(30px);
+   border-radius: 13px;
+   padding: 10px;
+   margin-top: 2px;
+
+ }
+.dropdown-services > li  {
+  display:block;
+}
+.dropdown-services > li > a{
+    display: block;
+    padding: 10px 25px;
+    color: #f7f7f72c;
+    text-decoration: none ;
+    font-size: 20px;
+   
+ }
+ .dropdown-services > li > a:hover{
+     background: #ffffff21;
+ }
+ .dorpdown-hover:hover .dropdown-services{
+   display: flex;
+   flex-direction: column;
+
+ } 
+
 
 @media only screen and (max-width: 1680px) and (min-width: 991px){
   .hc-fourthmainbox{
